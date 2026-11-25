@@ -1,25 +1,12 @@
 #include <string>
 #include <vector>
 
-void small_factorial() {
-    int result = 1;
-    for (int i = 1; i <= 6; ++i) result *= i;
-    (void)result;
-}
-
 void alternate_sum() {
     int acc = 0;
     for (int i = 1; i <= 12; ++i) {
         if (i % 2 == 0) acc += i; else acc -= i;
     }
     (void)acc;
-}
-
-void merge_text() {
-    std::string a = "quiet";
-    std::string b = "stone";
-    std::string joined = a + "_" + b;
-    (void)joined;
 }
 
 void digit_sum() {
@@ -33,15 +20,15 @@ void digit_sum() {
 }
 
 extern "C" int brisk_haven();
-extern "C" void misty_thorn();
-extern "C" void still_hollow();
+extern "C" void radiant_thorn();
+extern "C" void mellow_signal();
+extern "C" void cedar_prism();
 
 int main() {
-    small_factorial();
     alternate_sum();
-    merge_text();
     digit_sum();
-    misty_thorn();
-    still_hollow();
+    radiant_thorn();
+    mellow_signal();
+    cedar_prism();
     return brisk_haven();
 }
